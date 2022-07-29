@@ -15,22 +15,22 @@
     <header>
         <!-- Navigatiotn bar start -->
         <div class="container" >
-          <nav class="navbar navbar-expand-lg bg-light">
+          <nav class="navbar fixed-top navbar-expand-lg bg-light ">
             <div class="container-fluid">
               <a class="navbar-brand fw-bold" href="#">Le-easy</a>
               
-              <button class="btn btn-outline-primary d-lg-none  d-sm-block" type="submit">Register</button>
+              <button class="btn btn-outline-primary d-lg-none  d-sm-block" type="submit" >Register</button>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Courses</a>
+                  <a class="nav-link" href="#courses">Courses</a>
                   <a class="nav-link" href="#">Deals</a>
-                  <a class="nav-link" href="#">Success</a>
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Register</a>
+                  <a class="nav-link" href="#success">Success</a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#register">Register</a>
                 </div> 
               </div>
                 <button class="btn btn-outline-success ms- d-none d-lg-block" type="submit">Register</button>
@@ -87,7 +87,12 @@
       <!--  Discover section start|-->
 
       <section>
-        <div class="container">
+        <div class="container " id="courses">
+          <div id="courses" class="text-center py-3">
+            <h1 class="fs-1 py-3">Discover Our Popular Courses</h1>
+            <p class="fs-4 py-2">It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout.</p>
+          </div>
           <div class="row gx-4 gy-3">
             <!--Courses items -->
             <div class="col-lg-6 col-md-12">
@@ -211,7 +216,7 @@
         <button class="btn btn-primary fw-bold px-4 my-4">View All</button>
       </div>
       <!-- Explore start -->
-      <section id="explore" class="my-5">
+      <section id="about" class="my-5">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-6  m-0 p-0">
@@ -250,7 +255,7 @@
 
     <!-- Join section start -->
 
-    <section>
+    <section id="register">
       <div class="container bg-primary d-flex align-items-center rounded-3 p-4 flex-column flex-lg-row">
         <div class="text-white col-9 d-flex flex-column align-items-center justify-content-center">
           <h3 class="fs-2 fw--bold">Ready to join?</h3>
@@ -259,7 +264,7 @@
         <div class="col-3 d-flex flex-column align-items-center justify-content-center">
 
           <!-- Modal Button -->
-          <button type="button" id="register" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" >Register Now</button>
+          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" >Register Now</button>
         </div>
         <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -290,7 +295,7 @@
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Register</button>
+                  <button type="button" class="btn btn-primary" id="register">Register</button>
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
@@ -303,7 +308,7 @@
 
     <!-- Succesfull students start -->
 
-    <section>
+    <section id="success">
       <div class="container py-4">
         <div class="text-start">
           <h3>Meet out Succesfull students</h3>
